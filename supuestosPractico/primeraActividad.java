@@ -1,4 +1,4 @@
-package supuestospractico;
+package supuestosPractico;
 
 public class primeraActividad {
     
