@@ -23,7 +23,6 @@ public class amplicacion {
         //System.out.println(a);
         
         System.out.println("Actividad de autoevaluacion 5");
-        int $hora;
         int calculaFecha;
         int IVA;
 
