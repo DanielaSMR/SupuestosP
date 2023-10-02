@@ -29,8 +29,19 @@ public class ejer13Estru {
         int año6 = año4/10;//2
         int sumaAño = año1 + año3 + año5 + año6;
         
+        int total = sumaAño + sumaMes + sumaDia;
+        int total1 = total%10;//0
+        int total2 = total/10;//220
+        int total3 = total2%10;//0
+        int total4 = total2/10;//22
+        int total5 = total3%10;//2
+        int total6 = total3/10;//2
+        int sumaSemiTotal = total1 + total3 + total5 + total6;
+        int semi1 = sumaSemiTotal%10;//5
+        int semi2 = sumaSemiTotal/10;//1
+        int sumaTotal = semi1 + semi2;
 
-        System.out.println("Tu numero de la suerte es: " + );
+        System.out.println("Tu numero de la suerte es: " + sumaTotal);
 
     }
 }
