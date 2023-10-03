@@ -11,9 +11,10 @@ public class ejer6 {
         int lineas = 0;
         //\n
 
-        while(lineas < altura){
-            String 
-            System.out.println(N);
+        while(lineas <= altura){
+            //Sumar N al igual que lineas haya 1->N 2->NN
+            //Arreglar los espacios
+            System.out.println("N" + "/n");
             lineas = lineas + 1;
         }
     }
