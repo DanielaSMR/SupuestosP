@@ -8,27 +8,27 @@ public class ejer4 {
 
         System.out.println("--¿Calculadora!--");
         System.out.println("Introduce los numeros con los que quieres operar");
-        double num1 = sc.nextDouble();
-        double num2 = sc.nextDouble();
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
 
-        System.out.println("Escribe que operacion quiere hacer");
-        String operacion = args[0];
-
+        System.out.println("Escribe que operacion quiere hacer 1-suma 2-resta 3-multiplicacion 4-division 5-potencia");
+        int operacion = sc.nextInt();
+        //String operacion = args[0];
         //Integer parseInt = args[1]
 
-        if(operacion == "suma"){
+        if(operacion == 1){
             System.out.println(num1 + num2);
         }
-        else if(operacion == "resta"){
+        else if(operacion == 2){
             System.out.println(num1 - num2);
         }
-        else if(operacion == "multiplicacion"){
+        else if(operacion == 3){
             System.out.println(num1*num2);
         }
-        else if(operacion == "division"){
+        else if(operacion == 4){
             System.out.println(num1/num2);
         }
-        else if(operacion == "potencia"){
+        else if(operacion == 5){
             double elevado = Math.pow(num1, num2);
             System.out.println(elevado);
         }
