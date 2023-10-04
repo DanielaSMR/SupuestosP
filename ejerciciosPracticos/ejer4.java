@@ -8,11 +8,11 @@ public class ejer4 {
 
         System.out.println("--¿Calculadora!--");
         System.out.println("Introduce los numeros con los que quieres operar");
-        int num1 = sc.nextInt();
-        int num2 = sc.nextInt();
+        int num1 = Integer.parseInt(args[0]);
+        int num2 = Integer.parseInt(args[1]);
 
         System.out.println("Escribe que operacion quiere hacer 1-suma 2-resta 3-multiplicacion 4-division 5-potencia");
-        int operacion = sc.nextInt();
+        int operacion = Integer.parseInt(args[2]);;
         //String operacion = args[0];
         //Integer parseInt = args[1]
 

@@ -7,7 +7,8 @@ public class ejer1 {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Escribe el año");
-        int año = sc.nextInt();
+        int año = Integer.parseInt(args[0]);
+
         if(año% 4 == 0 ){
             System.out.println("Es un año bisiesto");
         }

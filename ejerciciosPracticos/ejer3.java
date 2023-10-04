@@ -7,7 +7,7 @@ public class ejer3 {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Escribe el numero del mes");
-        int mes = sc.nextInt();
+        int mes = Integer.parseInt(args[0]);
 
         switch(mes){
             case 1: System.out.println("Enero");

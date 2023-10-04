@@ -7,7 +7,7 @@ public class ejer5 {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Escribe lo que quieras y termina cuando escribar FIN");
-        String texto = sc.nextLine();
+        String texto = args[0];
 
         while(texto.contains("FIN")){
             break;

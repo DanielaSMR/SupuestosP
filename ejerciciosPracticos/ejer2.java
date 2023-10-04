@@ -7,11 +7,11 @@ public class ejer2 {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Escribe tu primer apellido");
-        String apellido1 = sc.nextLine();
+        String apellido1 = args[0];
         System.out.println("Escribe tu segundo apellido");
-        String apellido2 = sc.nextLine();
+        String apellido2 = args[1];
         System.out.println("Escribe tu nombre");
-        String nombre = sc.nextLine();
+        String nombre = args[2];
 
         System.out.println(nombre + apellido1 + apellido2);
 
