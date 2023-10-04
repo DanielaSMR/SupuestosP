@@ -7,7 +7,7 @@ public class ejer6 {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Como de alta quieres la piramide?");
-        int alturaMax = sc.nextInt();
+        int alturaMax = Integer.parseInt(args[0]);
         int nFinal = (alturaMax * 2) + 1; //Porque el numero de N que queda en la ultima fila,si en la primera tenemos una y cada fila aumentamos 2 el resultado la fila * 2 +1(porque se empieza en 1)
         int espaciosPrimer = nFinal / 2; //Porque el numero de N de la ultima fila es x la mitad es donde va estar la punta
         int nS = 1;
