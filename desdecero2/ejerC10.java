@@ -28,11 +28,11 @@ public class ejerC10 {
                     break;
             case 9: System.out.println("Septiembre" + "30 dias");
                     break;
-            case 10: System.out.println("Octubre");
+            case 10: System.out.println("Octubre" + "31 dias" );
                     break;
-            case 11: System.out.println("Noviembre");
+            case 11: System.out.println("Noviembre" + "30 dias");
                     break;
-            case 12: System.out.println("Diciembre");
+            case 12: System.out.println("Diciembre" + "31 dias");
                     break;
             default:  System.out.println("Mes erroneo");
     }
