@@ -8,16 +8,15 @@ public class ejer3 {
 
         System.out.println("Como de alta quieres la piramide?");
         int alturaMax = sc.nextInt();
-        int nFinal = (alturaMax * 2) + 1;
-        int espaciosPrimer = nFinal / 2; 
+        int nFinal = (alturaMax * 2);
+        int espaciosPrimer = nFinal / 2 - 1; 
         int nS = 1;
         int alturaMax2 = alturaMax;
         int guardarEspacio = espaciosPrimer;
         
         while(alturaMax/2 > 0){
                 for(int x = espaciosPrimer; x > 0; x--){
-                System.out.print("X");
-                x -=1;
+                System.out.print(" ");
                 }
                 for(int y = nS ;y > 0; y--){
                 System.out.print("N");
@@ -27,9 +26,9 @@ public class ejer3 {
                 alturaMax = alturaMax - 1;
                 System.out.print("\n");
         }
-        while(alturaMax2/2 > 0){
+        while(alturaMax2 > 0){
                 for(int x = guardarEspacio; x > alturaMax2; x--){
-                System.out.print("X");
+                System.out.print(" ");
                 x -=1;
                 }
                 for(int y = nS ;y > 0; y--){
