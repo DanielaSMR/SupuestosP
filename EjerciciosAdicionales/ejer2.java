@@ -3,6 +3,10 @@ package EjerciciosAdicionales;
 import java.util.Scanner;
 
 public class ejer2 {
+
+    //public static resultado(numero){
+
+    //}
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -23,6 +27,5 @@ public class ejer2 {
 
     }
     
-
     
 }
