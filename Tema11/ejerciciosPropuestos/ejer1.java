@@ -9,24 +9,29 @@ public class ejer1 {
         System.out.println("Escribe el numero");
         int numeroFactorial = sc.nextInt();
         int x = numeroFactorial;
+        int y = numeroFactorial;
+        System.out.println(numeroFactorial+ "*" + numeroFactorial + "=" + numeroFactorial * numeroFactorial);
 
-        while(x > 0){
-            factorialRecursivo(numeroFactorial);
-            x -=1;
-        }
+        factorialRecursivo(numeroFactorial, y);
         
     }
 
-    public static Integer factorialRecursivo(int num){
-        /*if(num >= 1){
+    public static Integer factorialRecursivo(int num, int mantenerNum){
+        int suma = 0;
+        if(num >= 1){
             int resta = num - 1;
-            int factor = num * resta;
-            System.out.println(num + "*" + resta + "=" + factor);
+            int factor = mantenerNum * resta;
+            suma = factor + suma; 
+            System.out.println(mantenerNum + "*" + resta + "=" + factor);
+            return factorialRecursivo(num - 1, mantenerNum);
+
         }else{
-            System.out.println("Error");
         }
+        System.out.println(suma);
+        return 0;
+    }  
+       
+    public static Integer factorialIterativo(int num2){
         return 0;
     }
-        if(n==0)return1;
-        else return n+factorial(num-1)*/
 }

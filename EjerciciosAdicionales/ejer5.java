@@ -4,11 +4,6 @@ import java.util.Scanner;
 import java.math.*;
 public class ejer5 {
 
-        public static double numerosRandoms(double min, double max){
-            min = Math.ceil(min);
-            max = Math.floor(max);
-            return Math.floor(Math.random() * (max - min + 1) + min);
-        }
 
         public static void main(String[] args){
             Scanner sc = new Scanner(System.in);

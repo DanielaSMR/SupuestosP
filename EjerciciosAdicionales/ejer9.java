@@ -8,36 +8,20 @@ public class ejer9 {
 
         System.out.println("Cuanto numeros se van a imprimir");
         int num = sc.nextInt();
-        int y =2;
-        int numMostrado = 1;
+        int numero = 1;
+        int fila = 1;
 
-        whie(num > 0 ){
-            for(int x = 1; x > y;x++){
-                System.out.println(numMostrado);
-                numMostrado +=1;
+        while (numero <= num) {
+            for (int i = 1; i <= fila; i++) {
+                if (numero > num) {
+                    break;
+                }
+                System.out.print(numero + " ");
+                numero++;
             }
-            y = y + 2;
-            num = num - 1;
-            System.out.println("\n");
-        }
+            System.out.println();
+            fila++;
 
-
-
-
-        /*int nFinal = num; 
-        int espaciosPrimer = nFinal / 2;
-        int nS = 1;
-        int numMostrado = 1;
-        
-        while(num > 0){
-            for(int x = espaciosPrimer; x > num; x--){
-            System.out.print(numMostrado);
-            x -=1;
-            numMostrado +=1;
-            }
-            espaciosPrimer +=1;
-            num = num - 1;
-            System.out.print("\n");
-    }*/
+    }
     }
 }
