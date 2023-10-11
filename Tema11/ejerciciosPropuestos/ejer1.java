@@ -18,13 +18,15 @@ public class ejer1 {
     }
 
     public static Integer factorialRecursivo(int num){
-        if(num >= 1){
+        /*if(num >= 1){
             int resta = num - 1;
             int factor = num * resta;
-            System.out.println(factor);
+            System.out.println(num + "*" + resta + "=" + factor);
         }else{
             System.out.println("Error");
         }
         return 0;
     }
+        if(n==0)return1;
+        else return n+factorial(num-1)*/
 }
