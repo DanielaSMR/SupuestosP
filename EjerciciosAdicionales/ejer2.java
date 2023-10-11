@@ -20,7 +20,7 @@ public class ejer2 {
             String otroNumero = sc.nextLine();
             if(otroNumero == "Si"){
 
-            }ese{
+            }else{
                 
             }
         }

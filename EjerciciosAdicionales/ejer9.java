@@ -8,8 +8,24 @@ public class ejer9 {
 
         System.out.println("Cuanto numeros se van a imprimir");
         int num = sc.nextInt();
-        int nFinal = (num * 2) + 1; 
-        int espaciosPrimr = nFinal / 2;
+        int y =2;
+        int numMostrado = 1;
+
+        whie(num > 0 ){
+            for(int x = 1; x > y;x++){
+                System.out.println(numMostrado);
+                numMostrado +=1;
+            }
+            y = y + 2;
+            num = num - 1;
+            System.out.println("\n");
+        }
+
+
+
+
+        /*int nFinal = num; 
+        int espaciosPrimer = nFinal / 2;
         int nS = 1;
         int numMostrado = 1;
         
@@ -19,11 +35,9 @@ public class ejer9 {
             x -=1;
             numMostrado +=1;
             }
-            nS = nS - 2;
             espaciosPrimer +=1;
             num = num - 1;
-            //numMostrado +=1;
             System.out.print("\n");
-    }
+    }*/
     }
 }
