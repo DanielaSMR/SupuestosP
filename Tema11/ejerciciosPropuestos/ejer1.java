@@ -10,28 +10,34 @@ public class ejer1 {
         int numeroFactorial = sc.nextInt();
         int x = numeroFactorial;
         int y = numeroFactorial;
-        System.out.println(numeroFactorial+ "*" + numeroFactorial + "=" + numeroFactorial * numeroFactorial);
-
+        //System.out.println(numeroFactorial+ "*" + numeroFactorial + "=" + numeroFactorial * numeroFactorial);
+        System.out.println("Recursivo");
         factorialRecursivo(numeroFactorial, y);
+        System.out.println("Iterativo");
+        factorialIterativo(numeroFactorial, y);
         
     }
 
     public static Integer factorialRecursivo(int num, int mantenerNum){
-        int suma = 0;
-        if(num >= 1){
+        if(num == 1){
+            return 1;
+            
+        }else{
             int resta = num - 1;
             int factor = mantenerNum * resta;
-            suma = factor + suma; 
-            System.out.println(mantenerNum + "*" + resta + "=" + factor);
-            return factorialRecursivo(num - 1, mantenerNum);
+            System.out.println(resta + "*" + mantenerNum + "=" + factor);
+            return factorialRecursivo(num - 1, factor);
 
-        }else{
         }
-        System.out.println(suma);
-        return 0;
     }  
        
-    public static Integer factorialIterativo(int num2){
+    public static Integer factorialIterativo(int num2, int mantenerNum2){
+        for(int i = num2; i > 1;i--){
+            num2 = num2 - 1;
+            int factor = mantenerNum2 * num2;
+            mantenerNum2 = factor;
+            System.out.println(num2 + "=" + factor);
+        }
         return 0;
     }
 }
