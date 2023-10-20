@@ -29,9 +29,9 @@ public class ejer4 {
 
         System.out.println("Cuantas lineas quieres?");
         int alturaMax = sc.nextInt();
-        int nFinal = (alturaMax * 2) + 1; 
+        /*int nFinal = (alturaMax * 2) + 1; 
         int espaciosPrimer = nFinal / 2;
-        int nS = 1;
+        int nS = 1;*/
         
         /* while(alturaMax > 0){
             for(int x = espaciosPrimer; x > 0; x--)
