@@ -24,6 +24,8 @@ public class ejer6 {
             return funcionBinario(division);
         }
     }
+
+    
     
     
     public static void main(String[] args) {
