@@ -18,7 +18,6 @@ public class ejer3 {
 
         System.out.println("Cuantas lineas quieres?");
         int numLineas = sc.nextInt();
-        int y= numLineas;
 
         for(int f = 1;f <= numLineas;f++){
             for(int c = 1;c <= 5;c++){
