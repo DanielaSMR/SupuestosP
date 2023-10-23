@@ -61,6 +61,7 @@ public class ejer6 {
         System.out.println("Leer de abajo a arriba :)");
         System.out.println("Binario:");
         funcionBinario(num);
+        System.out.println();
         System.out.println("Octal:");
         funcionOctal(num);
         System.out.println("Hexadecimal");
