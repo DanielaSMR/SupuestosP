@@ -27,8 +27,7 @@ public class ejer3 {
 
         for(int i = 1;i <= y.length();i++){
             for(int a = 0;a <= x;a++){
-                funcionBorrar(palabra, x);
-                System.out.println("\t");
+                System.out.println(funcionBorrar(palabra, x) + "\t");
             }
             x--;
         }
