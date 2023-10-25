@@ -8,10 +8,7 @@ public class ejer3 {
         if(x == 0){
             System.out.println(p.charAt(0));
         }else{
-            //System.out.println(p.charAt(0));
-            //System.out.println(p.length());
-            System.out.print(p.charAt(p.length() - 1));
-            //return funcionBorrar(p, x - 1);
+            System.out.println(p.substring(0, x));
         }
         return " ";
     }
@@ -26,9 +23,7 @@ public class ejer3 {
         funcionBorrar(palabra, x);
 
         for(int i = 1;i <= y.length();i++){
-            for(int a = 0;a <= x;a++){
-                System.out.println(funcionBorrar(palabra, x) + "\t");
-            }
+            System.out.println(funcionBorrar(palabra, x) + "\t");
             x--;
         }
     }
