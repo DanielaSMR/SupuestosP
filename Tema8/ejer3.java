@@ -8,7 +8,6 @@ public class ejer3 {
         System.arraycopy(array, 0,nuevoArray, 0,posicion);
         System.arraycopy(array, posicion+1,nuevoArray, posicion,nuevoArray.length-posicion);
         System.out.println("Nuevo nombre: ");
-
         array[array.length-1] = scCambio.nextLine();
         return array;
     }
@@ -21,9 +20,9 @@ public class ejer3 {
         int alumnos = sc.nextInt();
         nombre = new String[alumnos];
 
-        for(int i = 0;i < alumnos;i++){
+        for(int i = 1;i < alumnos;i++){
             System.out.println("Escribe el nombre del alumno" + i);
-            String nombreAlumnos = sc.nextLine();
+            String nombreAlumnos = sc.next();
             nombre [i] = nombreAlumnos;
         }
 
