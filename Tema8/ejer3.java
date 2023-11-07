@@ -20,7 +20,7 @@ public class ejer3 {
         int alumnos = sc.nextInt();
         nombre = new String[alumnos];
 
-        for(int i = 1;i < alumnos;i++){
+        for(int i = 0;i < alumnos;i++){
             System.out.println("Escribe el nombre del alumno" + i);
             String nombreAlumnos = sc.next();
             nombre [i] = nombreAlumnos;
