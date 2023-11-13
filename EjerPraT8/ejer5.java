@@ -46,11 +46,11 @@ public class ejer5 {
 
         int[] nuevoArray = new int [array.length-1];
 
-        System.arraycopy(array, 0,nuevoArray, 0,posicion);
-        System.arraycopy(array, posicion+1,nuevoArray, posicion,nuevoArray.length-posicion);
-        
+        System.arraycopy(array, 0,nuevoArray, 0,posicion-1);
         System.out.println("Nuevo numero: ");
-        array[array.length-1] = scCambio.nextInt();
+        array[posicion] = scCambio.nextInt();
+
+        System.arraycopy(array, posicion+1,nuevoArray, posicion,nuevoArray.length-posicion);
         return array;
     }
 }

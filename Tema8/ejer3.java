@@ -5,10 +5,13 @@ public class ejer3 {
     public static String[] eliminarElemento (String[] array, int posicion){
         Scanner scCambio = new Scanner(System.in);
         String[] nuevoArray = new String [array.length-1];
-        System.arraycopy(array, 0,nuevoArray, 0,array.length);
-        System.arraycopy(array, posicion+1,nuevoArray, posicion,nuevoArray.length-posicion);
+        System.arraycopy(array, 0,nuevoArray, 0,posicion-1);
+        
         System.out.println("Nuevo nombre: ");
         array[array.length-1] = scCambio.nextLine();
+
+        System.arraycopy(array, posicion+1,nuevoArray, posicion,nuevoArray.length-posicion);
+        
         return array;
     }
     public static void main(String[] args) {
