@@ -43,8 +43,11 @@ public class cadenas {
         String nombre = " Daniela ";
         System.out.println(nombre.trim());
 
-        cad1 = cad1.replace("e", "a");
-        /*System.out.println(cad1.replace("e", "a"(subtring(4))));*/
+        String cad4 = cad1.substring(0 , 4);
+        cad4 = cad4.replace("e", "a");
+        cad1 = cad1.substring(4 , 9);
+        cad1 = cad4 + cad1;
+        System.out.println(cad1);
 
         System.out.println(cad1.startsWith("D"));
         System.out.println(cad2.endsWith("l"));
