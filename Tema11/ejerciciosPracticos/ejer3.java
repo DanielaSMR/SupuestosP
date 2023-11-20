@@ -10,7 +10,7 @@ public class ejer3 {
         }else{
             System.out.println(p.substring(0, x));
         }
-        return " ";
+        return funcionBorrar(p, x--);
     }
 
     public static void main(String[] args) {
