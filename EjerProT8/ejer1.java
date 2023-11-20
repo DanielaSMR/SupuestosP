@@ -8,7 +8,7 @@ public class ejer1 {
         int numFilas = matriz.numeroDeFilas;
         System.out.println(numeroDeColumnas);
         String cad1 = new String();*/
-        matriz.solicitarTamanyos();
+        //matriz.solicitarTamanyos();
         matriz.asignarDatos();
        
     }  
