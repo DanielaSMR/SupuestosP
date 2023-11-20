@@ -57,9 +57,10 @@ public class cadenas {
         System.out.println(cad1.indexOf("a"));
         System.out.println(cad1.lastIndexOf("a"));
 
-        int[] vector;
-        vector = new int[cad1.length()];
-        System.out.println(vector.toString());
-
+        char [] patata = new char[cad1.length()];
+        for(int i = 0;i < patata.length; i ++){
+            patata [i] = cad1.charAt(i); 
+        }
+        System.out.println(patata);
     }
 }
