@@ -20,17 +20,13 @@ public class ejer4 {
         int sumadiagonal = 0;
         int sumadiagonalI=0;
 
-        while(e != 4 && i != 4){
             for(i = 0;i < matriz.length;i++){
                 for(e = 0;e < matriz[i].length;e++){
                     System.out.println("Escribe el numero de: fila " + e + " columna " + i);
                     matriz [i][e] = sc.nextInt();
-                    if(e == 4 && i != 4){
-                        e = 0;
-                    }
                 }
             }
-        }
+
         for(b = 0;b < matriz.length;b++){
             for(a = 0;a < matriz[b].length;a++){
                 System.out.print(matriz[b][a] + "\t");
