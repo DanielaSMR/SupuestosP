@@ -7,7 +7,7 @@ public class ejer1 {
 
         
 
-        int e = 0;
+       /* int e = 0;
         int i = 0;
         int maximo = 0;
         int minimo = 101;
@@ -31,7 +31,7 @@ public class ejer1 {
         }
         System.out.println("El numero maximo es: " + maximo);
         System.out.println("El numero minimo es: " + minimo);
-
+*/
 
         
     }
