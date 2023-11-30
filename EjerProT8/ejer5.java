@@ -18,5 +18,38 @@ public class ejer5 {
                 contA++;
             }
         }
+
+        int contB = 0;
+        for(int i = 0;i <= palabras.length - 1;i++){
+            for(int e = 0; e <= palabras.length;e++)
+            if(palabras[e].substring(i) == "b"){
+                contB++;
+            }
+        }
+
+        int contI = 0;
+        for(int i = 0;i <= palabras.length - 1;i++){
+            for(int e = 0; e <= palabras.length;e++)
+            if(palabras[e].substring(i) == "i"){
+                contI++;
+            }
+        }
+
+        int contO = 0;
+        for(int i = 0;i <= palabras.length - 1;i++){
+            for(int e = 0; e <= palabras.length;e++)
+            if(palabras[e].substring(i) == "o"){
+                contO++;
+            }
+        }
+
+        int contU = 0;
+        for(int i = 0;i <= palabras.length - 1;i++){
+            for(int e = 0; e <= palabras.length;e++)
+            if(palabras[e].substring(i) == "u"){
+                contU++;
+            }
+        }
+        
     }
 }
