@@ -1,9 +1,8 @@
-package OrientacionObjetos;
+package OrientacionObjetos.Ejercicio;
 
 public class Producto {
     static float rebaja;
     float precio;
-    float precioTotal;
 
     Producto (float precio){
         rebaja = 0;
@@ -17,12 +16,11 @@ public class Producto {
 
     public float getPrecioFinal(){
         if(rebaja != 0){
-            precioTotal = (precio - (precio*rebaja/100));
+            return (precio - (precio*rebaja/100));
 
         }else{
-            precioTotal = precio;
+            return precio;
         }
-        return precioTotal;
     }
 
 
