@@ -1,12 +1,34 @@
 package OrientacionObjetos.Ejercicio.EjerPracticos;
 
 public class Viajero {
-    String DNI;
-    String nombre;
-    String apellido;
-    String nacionalidad;
-    String direccion;
 
+    private String DNI;
+    private String nombre;
+    private String apellido;
+    private String nacionalidad;
+    private String direccion;
+
+    
+
+    public String getDNI() {
+        return DNI;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public String getNacionalidad() {
+        return nacionalidad;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
