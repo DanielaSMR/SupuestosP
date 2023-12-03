@@ -9,47 +9,40 @@ public class ejer5 {
         System.out.println("Escribe tu nombre");
         String texto = sc.nextLine();
         texto = texto.toLowerCase();
-        String[] palabras = texto.split(" ");
 
         int contA = 0;
-        for(int i = 0;i <= palabras.length - 1;i++){
-            for(int e = 0; e <= palabras.length;e++)
-            if(palabras[e].substring(i) == "a"){
-                contA++;
-            }
-        }
-
-        int contB = 0;
-        for(int i = 0;i <= palabras.length - 1;i++){
-            for(int e = 0; e <= palabras.length;e++)
-            if(palabras[e].substring(i) == "b"){
-                contB++;
-            }
-        }
-
-        int contI = 0;
-        for(int i = 0;i <= palabras.length - 1;i++){
-            for(int e = 0; e <= palabras.length;e++)
-            if(palabras[e].substring(i) == "i"){
-                contI++;
-            }
-        }
-
+        int contE = 0;
+        int contI = 0;      
         int contO = 0;
-        for(int i = 0;i <= palabras.length - 1;i++){
-            for(int e = 0; e <= palabras.length;e++)
-            if(palabras[e].substring(i) == "o"){
-                contO++;
+        int contU = 0;
+
+        for (int i = 0; i < texto.length(); i++) {
+            char caracter = texto.charAt(i);
+
+            switch (caracter) {
+                case 'a':
+                    contA++;
+                    break;
+                case 'e':
+                    contE++;
+                    break;
+                case 'i':
+                    contI++;
+                    break;
+                case 'o':
+                    contO++;
+                    break;
+                case 'u':
+                    contU++;
+                    break;
             }
         }
 
-        int contU = 0;
-        for(int i = 0;i <= palabras.length - 1;i++){
-            for(int e = 0; e <= palabras.length;e++)
-            if(palabras[e].substring(i) == "u"){
-                contU++;
-            }
-        }
-        
+        System.out.println("Número de A's: " + contA);
+        System.out.println("Número de E's: " + contE);
+        System.out.println("Número de I's: " + contI);
+        System.out.println("Número de O's: " + contO);
+        System.out.println("Número de U's: " + contU);
     }
+        
 }

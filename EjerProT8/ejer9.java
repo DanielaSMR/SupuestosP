@@ -13,14 +13,19 @@ public class ejer9 {
         Arrays.sort(num);
         System.out.println(Arrays.toString(num));
 
+        int numeroFaltante = 0;
+
         System.out.println("Numeros no encontrados");
-        for(int i = 0;i < 100;i++){
-            for(int e = 0;e < 100;e++){
-                if(num[i] != e){
-                    System.out.print(e + ",");
-                }
+        for (int i = 0; i < num.length; i++) {
+            while (numeroFaltante < num[i]) {
+                System.out.print(numeroFaltante + " ");
+                numeroFaltante++;
+            }
+    
+            if (numeroFaltante == num[i]) {
+                    numeroFaltante++;
             }
         }
-        
     }
+    
 }
