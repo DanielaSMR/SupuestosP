@@ -9,8 +9,8 @@ public class Viajero {
     private String direccion;
 
     
-
-    public String getDNI() {
+    //Se quita el public porque queiro que sea package private
+    String getDNI() {
         return DNI;
     }
 
@@ -26,7 +26,7 @@ public class Viajero {
         return nacionalidad;
     }
 
-    public String getDireccion() {
+    String getDireccion() {
         return direccion;
     }
 
@@ -42,11 +42,11 @@ public class Viajero {
         this.nacionalidad = nacionalidad;
     }
 
-    public void setDireccion(String direccion) {
+    void setDireccion(String direccion) {
         this.direccion = direccion;
     }
 
-    public void setDNI(String dNI) {
+    void setDNI(String dNI) {
         DNI = dNI;
     }
 }
